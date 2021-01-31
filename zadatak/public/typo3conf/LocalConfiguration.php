@@ -3,7 +3,7 @@ return [
     'BE' => [
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$ZzhOemk2U3AzWFRQMFQvNg$NU7fqRL03YAktIycH2gtaaU4Hrf9XlN1d2XozAnjxeg',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$L1BXcXphYU0uaDZiTHlNUQ$KOWZE2sIVDnA1wUrIYvAZOPWfO9ow25e+moMczyVSx8',
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -14,7 +14,7 @@ return [
         'Connections' => [
             'Default' => [
                 'charset' => 'utf8mb4',
-                'dbname' => 'typo3',
+                'dbname' => 'typo3_db',
                 'driver' => 'mysqli',
                 'host' => '127.0.0.1',
                 'password' => '',
@@ -35,6 +35,11 @@ return [
             'loginFootnote' => '',
             'loginHighlightColor' => '',
             'loginLogo' => '',
+        ],
+        'extension_builder' => [
+            'backupDir' => 'uploads/tx_extensionbuilder/backups',
+            'backupExtension' => '1',
+            'enableRoundtrip' => '1',
         ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
@@ -67,7 +72,7 @@ return [
     'MAIL' => [
         'transport' => 'smtp',
         'transport_sendmail_command' => '',
-        'transport_smtp_encrypt' => '',
+        'transport_smtp_encrypt' => false,
         'transport_smtp_password' => '',
         'transport_smtp_server' => 'localhost:25',
         'transport_smtp_username' => '',
@@ -106,7 +111,7 @@ return [
         ],
         'devIPmask' => '',
         'displayErrors' => 0,
-        'encryptionKey' => '665be5962cc3fecd10007e093f92d4d96971aa9c19ae05d44240f7dcb4934c7094f597a6cb4f13eec7b9eb932df005f7',
+        'encryptionKey' => '0a16ec158cf5b238789572a3521c4a92444f6e3efbccf8a26fb43f37210f466bd7234e2d4fd8cc150afa920918553702',
         'exceptionalErrors' => 4096,
         'features' => [
             'felogin.extbase' => true,
@@ -114,7 +119,7 @@ return [
             'rearrangedRedirectMiddlewares' => true,
             'unifiedPageTranslationHandling' => true,
         ],
-        'sitename' => 'TYPO3 ',
+        'sitename' => 'Zadatak',
         'systemMaintainers' => [
             1,
         ],
