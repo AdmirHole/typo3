@@ -36,11 +36,6 @@ return [
             'loginHighlightColor' => '',
             'loginLogo' => '',
         ],
-        'extension_builder' => [
-            'backupDir' => 'uploads/tx_extensionbuilder/backups',
-            'backupExtension' => '1',
-            'enableRoundtrip' => '1',
-        ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
